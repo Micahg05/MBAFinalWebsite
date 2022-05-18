@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
     IntroSectionContainer,
-    MainCard,
+    TitleText,
+    TitleSubheader,
     Title,
     SectionContainer,
     Header,
@@ -19,8 +20,6 @@ import {
     InfoSectionCard,
     BallImage
 } from './style';
-import basketballTrailLR from '../../images/basketballTrailLR.png';
-import basketballTrailRL from '../../images/basketballTrailRL.png';
 import { lanyardDescriptions } from './strings';
 import LightningBugPassFinal from '../../images/LightningBugPassFinal.png';
 import expandArrow from '../../images/expandArrow.svg';
@@ -39,7 +38,7 @@ export const InfoSections = () => {
         gsap.fromTo(el.querySelector(".title"),
         {
             opacity: 0,
-            y: -100
+            y: -50
         },
         {
             opacity: 1,
@@ -61,7 +60,9 @@ export const InfoSections = () => {
         <SectionContainer border>
             <InfoSection>
                 <InfoSectionCard>
-                    Phase 1
+                    <TitleText>Phase 1:</TitleText>
+                    <TitleSubheader>Team Ownership Badge Sale</TitleSubheader>
+                    <SectionHeaderImage src={LightningBugPassFinal} alt="Badge" />
                 </InfoSectionCard>
             </InfoSection>
             <InfoSection>
@@ -71,7 +72,9 @@ export const InfoSections = () => {
             </InfoSection>
             <InfoSection>
                 <InfoSectionCard>
-                    Phase 2
+                    <TitleText>Phase 2:</TitleText>
+                    <TitleSubheader>Player Airdrop / Mint</TitleSubheader>
+                    <SectionHeaderImage src={PlayerAsset} alt="Player image" />
                 </InfoSectionCard>
             </InfoSection>
             <InfoSection>
@@ -81,7 +84,9 @@ export const InfoSections = () => {
             </InfoSection>
             <InfoSection>
                 <InfoSectionCard>
-                    Phase 3
+                    <TitleText>Phase 3:</TitleText>
+                    <TitleSubheader>League Simulation Game</TitleSubheader>
+                    <SectionHeaderImage src={BasicBBall} alt="Player image" />
                 </InfoSectionCard>
             </InfoSection>
             <InfoSection>
@@ -91,6 +96,9 @@ export const InfoSections = () => {
             </InfoSection>
             <InfoSection>
                 <InfoSectionCard>
+                    <TitleText>Phase 4:</TitleText>
+                    <TitleSubheader>League Expansion</TitleSubheader>
+                    <SectionHeaderImage src={KrazyShoe} alt="Player image" />
                     Phase 4
                 </InfoSectionCard>
             </InfoSection>
@@ -101,7 +109,9 @@ export const InfoSections = () => {
             </InfoSection>
             <InfoSection>
                 <InfoSectionCard>
-                    Phase 5
+                    <TitleText>Phase 5:</TitleText>
+                    <TitleSubheader>Promotion / Relegation Begins</TitleSubheader>
+                    <SectionHeaderImage src={ProRel} alt="Player image" />
                 </InfoSectionCard>
             </InfoSection>
             <InfoSection>
@@ -111,7 +121,9 @@ export const InfoSections = () => {
             </InfoSection>
             <InfoSection>
                 <InfoSectionCard>
-                    Phase 6
+                    <TitleText>Phase 6:</TitleText>
+                    <TitleSubheader>The Distant Future</TitleSubheader>
+                    <SectionHeaderImage src={PlayerAsset} alt="Player image" />
                 </InfoSectionCard>
             </InfoSection>
             {/* <DescriptionContainer>

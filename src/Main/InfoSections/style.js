@@ -1,7 +1,7 @@
 import styled  from 'styled-components';
 
 export const IntroSectionContainer = styled('div')`
-    background: #000000;
+
 `;
 
 export const MainCard = styled('div')`
@@ -22,7 +22,6 @@ export const BallImage = styled('img')`
 
 export const Title = styled('div')`
   font-size: 150px;
-  background: #000000;
   padding-left: 20px;
   text-color: #000000;
   text-align: center;
@@ -86,8 +85,7 @@ export const ToggleImage = styled('img')`
 
 export const SectionHeaderImage = styled('img')`
   height: auto;
-  width: 80px;
-  margin-right: 20px;
+  width: 8rem;
 `;
 
 export const HeaderContentContainer = styled('div')`
@@ -100,10 +98,19 @@ export const InfoSection = styled('div')`
   display: flex;
   width: 100%;
   padding: 20px;
+  justify-content: center;
 `;
 
 export const InfoSectionCard = styled('div')`
-  width: 50%;
-  height: 500px;
-  background: white;
+  display: flex;
+  flex-direction: column;
+`;
+
+
+export const TitleText = styled('div')`
+
+`;
+
+export const TitleSubheader = styled('div')`
+  
 `;

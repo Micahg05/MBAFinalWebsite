@@ -20,8 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     min-width: 100vh;
   }
   body {
-    // background: #FAF9F6;
-    background: #000000;
+    background: #080808;
     margin: 0px;
     height: 100%;
     width: 100%;

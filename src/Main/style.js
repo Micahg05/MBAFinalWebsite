@@ -13,7 +13,7 @@ export const MainImageContainer = styled('div')`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 80vh;
 `;
 
 export const Card = styled('div')`
@@ -29,8 +29,8 @@ export const Card = styled('div')`
 
 export const CardImage = styled('div')`
     background: url(${PlayerCardNewPrototype});
-    height: 35rem;
-    width: 28rem;
+    height: 29rem;
+    width: 23rem;
     border-radius: 15px;
     background-size: cover;
 `;
