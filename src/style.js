@@ -16,11 +16,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   #root {
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vh;
   }
   body {
-    background: #080808;
+    background: #282828;
     margin: 0px;
     height: 100%;
     width: 100%;
@@ -52,17 +52,18 @@ export const GlobalStyle = createGlobalStyle`
 export const AppContainer = styled('div')`
   display: flex;
   flex-direction: column;
-  min-height: 90%;
+  height: 100vh;
 `;
 
 export const NavBarContainer = styled('div')`
-
 `;
 
 export const MainSectionContainer = styled('div')`
-
+  display: flex;
+  flex: 1;
 `;
 
 export const FooterContainer = styled('div')`
-
+  height: 100px;
+  padding: 40px;
 `;

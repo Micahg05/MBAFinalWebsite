@@ -4,7 +4,7 @@ import PlayerCardNewPrototype from '../images/PlayerCardNewPrototype.png';
 export const MainContainer = styled('div')`
     display: flex;
     flex-direction: column;
-    min-height: 800px;
+    flex: 1;
 `;
 
 export const MainImageContainer = styled('div')`
@@ -13,7 +13,7 @@ export const MainImageContainer = styled('div')`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    height: 50vh;
 `;
 
 export const Card = styled('div')`
@@ -33,4 +33,9 @@ export const CardImage = styled('div')`
     width: 23rem;
     border-radius: 15px;
     background-size: cover;
+`;
+
+export const CenterImage = styled('img')`
+    width: 250px;
+    height: auto;
 `;
