@@ -4,6 +4,7 @@ export const Title = styled('div')`
   font-size: 25px;
   color: #292929;
   text-align: center;
+  cursor: pointer;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   -webkit-text-stroke-width: 1px;
