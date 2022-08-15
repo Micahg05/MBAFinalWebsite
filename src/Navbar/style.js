@@ -10,6 +10,7 @@ padding: 40px;
 export const MainLogo = styled('img')`
 height: 100px;
 width: auto;
+margin-left: 20px;
 `;
 
 export const LinkContainer = styled('div')`

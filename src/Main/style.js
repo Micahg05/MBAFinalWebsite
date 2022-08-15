@@ -1,4 +1,5 @@
 import styled  from 'styled-components';
+import { Link } from 'react-router-dom';
 import PlayerCardNewPrototype from '../images/PlayerCardNewPrototype.png';
 
 export const MainContainer = styled('div')`
@@ -38,4 +39,10 @@ export const CardImage = styled('div')`
 export const CenterImage = styled('img')`
     width: 250px;
     height: auto;
+`;
+
+export const StyledLink = styled(Link)`
+    &:hover img {
+        transform: scale(1.1);
+    }
 `;

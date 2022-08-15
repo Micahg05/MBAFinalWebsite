@@ -1,17 +1,23 @@
-import { Title, ButtonsContainer } from './style';
+import { Title, ButtonsContainer, StyledLink } from './style';
 
 export const Footer = () => {
     return (
         <ButtonsContainer>
-            <Title>
-                Gameplay
-            </Title>
-            <Title>
-                Mint
-            </Title>
-            <Title>
-                Teams
-            </Title>
+            <StyledLink to="/gameplay">
+                <Title>
+                    Gameplay
+                </Title>
+            </StyledLink>
+            <StyledLink to="/mint">
+                <Title>
+                    Mint
+                </Title>
+            </StyledLink>
+            <StyledLink to="/teams">  
+                <Title>
+                    Teams
+                </Title>
+            </StyledLink>
         </ButtonsContainer>
     );
 }

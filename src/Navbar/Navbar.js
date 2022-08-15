@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {NavContainer, MainLogo, LinkContainer, ExternalLinkImage} from './style';
 import MBA from '../images/MBA.png';
 import TwitterLink from '../images/twitterLogo.png';
@@ -7,7 +8,9 @@ import DiscordLink from '../images/discordLogo.png';
 export const Navbar = () => {
     return(
         <NavContainer>
-            <MainLogo src={MBA} alt="Metaverse Baller Association" />
+            <Link to="/">
+                <MainLogo src={MBA} alt="Metaverse Baller Association" />
+            </Link>
             <LinkContainer >
                 <a href='https://discord.gg/X26wqgPUmC' target='_blank' rel="noreferrer">
                     <ExternalLinkImage src={DiscordLink} alt="Discord Logo"/>
