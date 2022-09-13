@@ -14,7 +14,8 @@ function App() {
   return (
     <AppContainer>
       <BrowserRouter>
-        <NavBarContainer>
+      <Main/>
+        {/* <NavBarContainer>
           <Navbar />
         </NavBarContainer>
         <MainSectionContainer>
@@ -41,7 +42,7 @@ function App() {
           </MainSectionContainer>
         <FooterContainer>
           <Footer />
-        </FooterContainer>
+        </FooterContainer> */}
       </BrowserRouter>
     </AppContainer>
   );
