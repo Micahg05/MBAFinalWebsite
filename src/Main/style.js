@@ -11,7 +11,7 @@ export const MainContainer = styled('div')`
 
 export const MainTypes = styled('div')`
 text-align: center;
-cursor: default;
+cursor: none;
 flex: 1;
 margin: 2rem 0;
 font-size: 2.4rem;
