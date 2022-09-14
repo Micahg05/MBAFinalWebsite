@@ -54,16 +54,3 @@ export const AppContainer = styled('div')`
   flex-direction: column;
   height: 100vh;
 `;
-
-export const NavBarContainer = styled('div')`
-`;
-
-export const MainSectionContainer = styled('div')`
-  display: flex;
-  flex: 1;
-`;
-
-export const FooterContainer = styled('div')`
-  height: 100px;
-  padding: 40px;
-`;

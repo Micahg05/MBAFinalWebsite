@@ -1,6 +1,6 @@
 import React from 'react';
-import { MainContainer, MainTypes, BrandTitle, BrandSub, MainImageContainer, CenterImage, StyledLink} from './style';
-import DunkLogo from '../images/DunkLogo.png';
+import { MainContainer, MainTypes, BrandTitle, TwitterImage} from './style';
+import TwitterLogo from '../images/TwitterLogo.svg';
 
 export const Main = () => {
     return (
@@ -13,11 +13,7 @@ export const Main = () => {
                     <span>coming soon</span>
                 </BrandTitle>
             </MainTypes>
-            {/* <MainImageContainer>
-                <StyledLink to='/intro'>
-                    <CenterImage src={DunkLogo} alt="dunk logo" />
-                </StyledLink>
-            </MainImageContainer> */}
+            <TwitterImage src={TwitterLogo} alt="TwitterLogo"/>
         </MainContainer>
     );
 }
