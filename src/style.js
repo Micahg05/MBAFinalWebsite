@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     margin: 0;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
   }
   body {
     background: #000000;
