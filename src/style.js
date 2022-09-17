@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     margin: 0;
     height: 100vh;
-    min-width: 100vh;
+    width: 100vh;
   }
   body {
     background: #000000;
@@ -53,4 +53,5 @@ export const AppContainer = styled('div')`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
 `;

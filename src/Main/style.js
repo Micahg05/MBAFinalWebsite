@@ -1,84 +1,135 @@
 import styled  from 'styled-components';
+import {device} from '../deviceSizes';
 
 export const MainContainer = styled('div')`
     display: flex;
     flex-direction: column;
     flex: 1;
+    font-family: 'Russo One', sans-serif;
+`;
+
+export const LeegSection = styled('div')`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: none;
+  font-weight: 300;
+`;
+
+export const DocLink = styled('div')`
+  font-size: 2rem;
+`;
+
+export const LeegsTextSection = styled('div')`
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: transparent;
+`;
+
+export const TwitterBannerContainer = styled('div')`
+    padding: 60px;
+    justify-content: center;
     align-items: center;
 `;
 
-export const MainTypes = styled('div')`
-text-align: center;
-cursor: none;
-flex: 1;
-margin: 2rem 0;
-font-size: 2.4rem;
-font-weight: 300;
-position: relative;
+export const BannerSection = styled('div')`
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 50px;
 `;
 
 export const BrandTitle = styled('div')`
   font-family: 'Russo One', sans-serif;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
+  font-size: 6rem;
   color: transparent;
 
-  @media only screen and (max-width: 1100px) {
-    font-size: 4rem;
+  @media only screen and ${device.mobileM} {
+    font-size: 6.5rem;
   }
 
-  @media only screen and (max-width: 900px) {
-    font-size: 3rem;
+  @media only screen and ${device.mobileL} {
+    font-size: 7rem;
   }
 
-  @media only screen and (max-width: 700px) {
-    font-size: 2.2rem;
+  @media only screen and ${device.tablet} {
+    font-size: 8rem;
   }
 
-  @media only screen and (max-width: 480px) {
-    font-size: 1.6rem;
+  @media only screen and ${device.laptop} {
+    font-size: 9rem;
+  }
+
+  @media only screen and ${device.laptopL} {
+    font-size: 10rem;
+  }
+
+  @media only screen and ${device.desktop} {
+    font-size: 11rem;
   }
 
   &:hover span:nth-child(1) {
-    transform: translateY(-1rem);
+    transform: translateY(-.4rem);
 
-    @media only screen and (max-width: 1100px) {
-      transform: translateY(-0.7rem);
-    }
-
-    @media only screen and (max-width: 900px) {
-      transform: translateY(-0.55rem);
-    }
-
-    @media only screen and (max-width: 700px) {
+    @media only screen and ${device.mobileM} {
       transform: translateY(-0.47rem);
     }
-
-    @media only screen and (max-width: 480px) {
-      transform: translateY(-0.4rem);
+  
+    @media only screen and ${device.mobileL} {
+      transform: translateY(-0.55rem);
+    }
+  
+    @media only screen and ${device.tablet} {
+      transform: translateY(-0.69rem);
+    }
+  
+    @media only screen and ${device.laptop} {
+      transform: translateY(-1rem);
+    }
+  
+    @media only screen and ${device.laptopL} {
+      transform: translateY(-1.2rem);
+    }
+  
+    @media only screen and ${device.desktop} {
+      transform: translateY(-1.5rem);
     }
   }
 
   &:hover span:nth-child(2) {
-    transform: translateY(1rem);
+    transform: translateY(.4rem);
 
-    @media only screen and (max-width: 1100px) {
-      transform: translateY(0.7rem);
-    }
-
-    @media only screen and (max-width: 900px) {
-      transform: translateY(0.55rem);
-    }
-
-    @media only screen and (max-width: 700px) {
+    @media only screen and ${device.mobileM} {
       transform: translateY(0.47rem);
     }
-
-    @media only screen and (max-width: 480px) {
-      transform: translateY(0.4rem);
+  
+    @media only screen and ${device.mobileL} {
+      transform: translateY(0.55rem);
+    }
+  
+    @media only screen and ${device.tablet} {
+      transform: translateY(0.69rem);
+    }
+  
+    @media only screen and ${device.laptop} {
+      transform: translateY(1rem);
+    }
+  
+    @media only screen and ${device.laptopL} {
+      transform: translateY(1.2rem);
+    }
+  
+    @media only screen and ${device.desktop} {
+      transform: translateY(1.5rem);
     }
   }
 
@@ -112,18 +163,18 @@ export const BrandTitle = styled('div')`
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 350ms ease;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #fff;
     background: #66e3be;
     width: 97.5%;
-    padding-left: 5px;
+    padding: 1px 0 1px 5px;
     text-align: center;
     letter-spacing: 0.5rem;
     word-spacing: 1rem;
     line-height: 100%;
 
     @media only screen and (max-width: 1100px) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     @media only screen and (max-width: 900px) {
@@ -148,6 +199,6 @@ export const BrandTitle = styled('div')`
 `;
 
 export const TwitterImage = styled('img')`
-  height: 80px;
+  height: 60px;
   width: auto;
 `;
