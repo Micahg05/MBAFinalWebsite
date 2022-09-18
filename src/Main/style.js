@@ -14,18 +14,11 @@ export const LeegSection = styled('div')`
   justify-content: center;
   align-items: center;
   color: white;
-  cursor: none;
   font-weight: 300;
 `;
 
 export const DocLink = styled('div')`
   font-size: 2rem;
-`;
-
-export const LeegsTextSection = styled('div')`
-  transform: translate(-50%, -50%);
-  font-size: 10rem;
-  color: transparent;
 `;
 
 export const TwitterBannerContainer = styled('div')`
@@ -52,6 +45,7 @@ export const BrandTitle = styled('div')`
   transform: translate(-50%, -50%);
   font-size: 6rem;
   color: transparent;
+  cursor: none;
 
   @media only screen and ${device.mobileM} {
     font-size: 6.5rem;
@@ -89,11 +83,11 @@ export const BrandTitle = styled('div')`
     }
   
     @media only screen and ${device.tablet} {
-      transform: translateY(-0.69rem);
+      transform: translateY(-0.72rem);
     }
   
     @media only screen and ${device.laptop} {
-      transform: translateY(-1rem);
+      transform: translateY(-1.1rem);
     }
   
     @media only screen and ${device.laptopL} {
@@ -117,11 +111,11 @@ export const BrandTitle = styled('div')`
     }
   
     @media only screen and ${device.tablet} {
-      transform: translateY(0.69rem);
+      transform: translateY(0.72rem);
     }
   
     @media only screen and ${device.laptop} {
-      transform: translateY(1rem);
+      transform: translateY(1.1rem);
     }
   
     @media only screen and ${device.laptopL} {
@@ -149,7 +143,7 @@ export const BrandTitle = styled('div')`
   }
 
   & span:nth-child(1) {
-    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0%, 100% 51%, 0 51%);
   }
 
   & span:nth-child(2) {
